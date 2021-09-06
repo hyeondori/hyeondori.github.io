@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "SQL"
-    url: https://hyeondori.github.io/docs/SQL/
+  #- title: "SQL"
+  #  url: /docs/SQL
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

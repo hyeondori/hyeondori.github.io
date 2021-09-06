@@ -27,7 +27,7 @@ EXISTS문의 부정은 NOT EXISTS로 활용할 수 있다.
 
 예시 QUERY는 다음과 같다.
 
-[WHERE문 EXISTS 활용]
+[WHERE문 EXISTS/NOT EXISTS 활용]
 -------------------
 ```oracle
 SELECT a.empno
@@ -39,8 +39,6 @@ SELECT a.empno
                  FROM dept_history aa
 				WHERE aa.empno = a.empno)
 ```
-[WHERE문 NOT EXISTS 활용]
--------------------
 ```oracle
 SELECT a.empno
      , a.ename

@@ -32,17 +32,17 @@ EXISTS문의 부정은 NOT EXISTS로 활용할 수 있다.
 ```oracle
 SELECT a.empno
      , a.ename
-	 , a.deptno
+     , a.deptno
   FROM emp a
  WHERE a.job = 'MANAGER'
    AND EXISTS (SELECT 'X'
                  FROM dept_history aa
-				WHERE aa.empno = a.empno)
+                WHERE aa.empno = a.empno)
 ```
 ```oracle
 SELECT a.empno
      , a.ename
-	 , a.deptno
+     , a.deptno
   FROM emp a
  WHERE a.job = 'MANAGER'
    AND NOT EXISTS (SELECT 'X'
@@ -59,12 +59,12 @@ EXISTS문의 경우 WHERE절의 조건에 맞는 컬럼이 존재하는지를 �
 ```oracle
 SELECT a.empno
      , a.ename
-	 , a.job
-	 , a.deptno
-	 , CASE WHEN EXISTS (SELECT 'X'
-						   FROM dept_history aa
-						  WHERE aa.empno = a.empno) THEN 'Y'
-		END dept_history_yn
+     , a.job
+     , a.deptno
+     , CASE WHEN EXISTS (SELECT 'X'
+                           FROM dept_history aa
+                          WHERE aa.empno = a.empno) THEN 'Y'
+             END dept_history_yn
   FROM emp a
  WHERE a.job = 'MANAGER'
 ```
@@ -78,12 +78,12 @@ CASE문에서는 위와 같이 활용할 수 있다.
 ```oracle
 SELECT a.empno
      , a.ename
-	 , a.deptno
+     , a.deptno
   FROM emp a
  WHERE a.job = 'MANAGER'
    AND a.empno IN (SELECT aa.empno
-					 FROM dept_history aa
-					WHERE aa.empno = a.empno)
+                     FROM dept_history aa
+                    WHERE aa.empno = a.empno)
 ```
 조회해보면 EXISTS와 IN에 의한 결과는 동일하게 나타난다.
 위에서 말했듯 IN을 활용하게 되면 SUBQUERY 결과를 모두 수행하게 되므로,

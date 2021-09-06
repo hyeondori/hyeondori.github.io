@@ -18,6 +18,7 @@ EXISTS문이 종종 IN으로 조건을 거는 것에 비해 효과적인 이유�
 TABLE 크기가 작은 경우에는 서로간의 성능 차이가 극명히 나타나지 않겠지만, 최소 몇백만건 이상의 DATA를 QUERY하게 될 때 해당 함수의 진가를 발휘하게 된다.
 
 **※ NOT EXISTS**
+
 EXISTS문의 부정은 NOT EXISTS로 활용할 수 있다.
 그러나, 이 때 주의할 점은 EXISTS문 내의 SUBQUERY에 따라 EXISTS문이 빠른 성능을 내었더라도 NOT EXISTS문에서 동일하게 우수한 성능을 기대하기는 어렵다.
 이는 SUBQUERY의 결과의 TRUE/FALSE 비율에 따라 달라지는 것으로 보인다.

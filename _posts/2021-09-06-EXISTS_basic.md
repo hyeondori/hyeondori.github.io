@@ -1,12 +1,18 @@
 ---
 layout: single
 title: "EXISTS문 기본"
-permalink: /docs/EXISTS-basic/
+permalink: /docs/
 excerpt: "How to use EXISTS on Oracle DB."
 last_modified_at: 2021-09-06T13:33:00+09:00
-redirect_from:
-  - /theme-setup/
 toc: true
+categories:
+  - SQL
+  - Oracle
+tags:
+  - query
+  - EXISTS
+  - IN
+  - Tuning
 ---
 Oracle에서의 EXISTS()
 ====================

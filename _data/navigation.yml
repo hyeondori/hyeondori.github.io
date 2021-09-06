@@ -6,14 +6,5 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Posts"
     url: /year-archive/
-  - title: "Collections"
-    url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
-sidebar:
-  - title: "Title"
-    image: http://placehold.it/350x250
-    image_alt: "image"
-    text: "Some text here."
-  - title: "Another Title"
-    text: "More text here."
+  - title: "categories"
+    url: /categories/

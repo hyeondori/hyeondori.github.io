@@ -24,7 +24,7 @@ description              : "선한 의지로 더 밝은 내일을 만듭니다\n
 url                      : "https://hyeondori.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "hyeondori/hyeondori.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/teaser_image.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo_image.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "분석가 현도리의 선한 의지가 담긴 공간" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)

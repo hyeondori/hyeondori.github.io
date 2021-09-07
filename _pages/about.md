@@ -1,4 +1,5 @@
 ---
+layout: single
 permalink: /about/
 title: "블로그 사용법"
 excerpt: "선한 의지로 공부하는 사람을 위한 소소한 동행"
@@ -36,11 +37,17 @@ toc: true
 혹여나 본인이 같은 분야에 관심이 많은 사람이라면 언제든지 연락 주시기 바랍니다.
 
 🖥️ 머신러닝 및 딥러닝 ML/DL
+
 🗣️ 자연어처리 NLP
+
 👀 컴퓨터 비전 Computer Vision
+
 🗄️ SQL 오라클 SQL Oracle
+
 🇨🇳 중국어 Chinese
+
 🏕️사진 Photography
+
 🕹️게임 Game
 
 부디 저의 작은 공간이 도움이 되었길 소망합니다 :)

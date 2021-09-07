@@ -6,7 +6,7 @@ excerpt: "역전파와 연쇄 법칙 이해"
 last_modified_at: 2021-09-06T13:33:00+09:00
 toc: true
 categories:
-  - ML/DL
+  - ML,DL
 tags:
   - PyTorch
   - Back Propagation

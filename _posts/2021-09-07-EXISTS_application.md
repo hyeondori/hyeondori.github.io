@@ -2,7 +2,6 @@
 layout: single
 title: "EXISTS문 활용"
 search: true
-permalink: /SQL/
 excerpt: "How to use EXISTS on Oracle DB."
 last_modified_at: 2021-09-06T13:33:00+09:00
 toc: true

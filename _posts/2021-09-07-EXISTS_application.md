@@ -55,7 +55,7 @@ SELECT a.date
 1. `INDEX` 활용
 2. `HASH_SJ` Hint 활용
 
-## [`INDEX` 활용]
+### [`INDEX` 활용]
 
 `INDEX`라는 개념을 제대로 활용해보지 못한 사람을 위해 간략하게 설명하자면, `INDEX` 는 RDBMS에서 검색 속도를 높이기 위한 기술이다. TABLE의 컬럼을 색인화(따로 파일로 저장하는 것을 일컬음)하여 검색 시 해당 TABLE의 record를 Full Scan하지 않고 색인화 되어있는 `INDEX` 파일을 검색하여 검색속도를 빠르게 한다.
 
@@ -91,7 +91,7 @@ QUERY를 천천히 읽어보면, `WHERE`문에서 account TABLE의 amount 컬럼
 
 위의 EXISTS 문에서는 무자비한(?) 범위 비교가 실행된다. 다소 DB한테 미안하지만, 조금이나마 덜 미안하기 위해 `INDEX`를 잡아주자. 필자는 위의 상황에서 acountno, amount, date 컬럼에 대해 두번째 `INDEX`를 잡아주었다.
 
-## [`HASH_SJ` Hint 활용]
+### [`HASH_SJ` Hint 활용]
 
 사실 필자는 `INDEX`만 잡아주면 이 혼란한 상황이 종결될 줄 알았지만, Tuning의 세상은 그리 호락호락하지 않았다.
 

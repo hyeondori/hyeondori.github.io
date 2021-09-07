@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR"
 title                    : "Hello, hyeondori world!"
 title_separator          : "&#124;"
-subtitle                 : "Version 1.0" # site tagline that appears below site title in masthead
+subtitle                 : "OPportunity ENvisioner" # site tagline that appears below site title in masthead
 name                     : "Hans Shin 申弦洙"
-description              : "선한 의지로 더 밝은 내일을 만듭니다\nCreate a brighter tomorrow with good will"
+description              : "선한 의지로 더 밝은 내일을 만듭니다."
 url                      : "https://hyeondori.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "hyeondori/hyeondori.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "Hans Shin 申弦洙"
   avatar           : "/assets/images/avatar_image.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "선한 의지로 더 밝은 내일을 만듭니다\nCreate a brighter tomorrow with good will"
+  bio              : "선한 의지로 더 밝은 내일을 만듭니다."
   location         : "Seoul, Republic of Korea"
 
   links:

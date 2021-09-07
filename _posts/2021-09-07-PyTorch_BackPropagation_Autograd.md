@@ -71,10 +71,11 @@ Chain Rule은 한국어로 연쇄 법칙이라 일컬으며, 함수의 합성에
 결론적으로 얘기하면 Backward propagation을 통해 어떤 값을 받기 전에 Local gradient를 미리 계산해 놓을 수 있고 이를 조합하여 Chain Rule에 의해 각각의 노드들이 받게 되는 가중치를 계산할 수 있다는 내용이 된다.
 
 
+## PyTorch 구현
 
 자, 그럼 바로 PyTorch로 한번 간단하게 Backward propagation하여 가중치를 업데이트하는지 구현해보자.
 
-## Module import
+### Module import
 
 
 ```python
@@ -82,7 +83,7 @@ import torch
 from torch.autograd import Variable
 ```
 
-## 변수 선언
+### 변수 선언
 
 
 ```python
@@ -91,7 +92,7 @@ y_data = [2.0, 4.0, 6.0]
 w = torch.tensor([1.0], requires_grad=True) # Any random
 ```
 
-## 함수 선언
+### 함수 선언
 
 각 노드 x에 가중치 w를 반영할 forward(x)함수와 Loss function을 계산하기 위한 loss(x, y)함수를 선언한다.
 
@@ -115,6 +116,8 @@ print("Prediction (before training)",  4, forward(4).item())
 ```
 
     Prediction (before training) 4 4.0
+
+### 훈련 실행
 
 10번의 epoch동안 gradient loss를 계산하고 이를 통해 가중치를 업데이트한다.
 

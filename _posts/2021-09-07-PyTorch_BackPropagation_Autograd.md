@@ -3,7 +3,7 @@ layout: single
 title: "역전파와 Autograd를 PyTorch로 가볍게 구현해보자"
 search: true
 excerpt: "역전파와 연쇄 법칙 이해"
-last_modified_at: 2021-09-06T13:33:00+09:00
+last_modified_at: 2021-09-07T16:12:00+09:00
 toc: true
 categories:
   - ML,DL

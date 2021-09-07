@@ -7,7 +7,6 @@ last_modified_at: 2021-09-06T13:33:00+09:00
 toc: true
 categories:
   - SQL
-  - Oracle
 tags:
   - query
   - EXISTS

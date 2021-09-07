@@ -2,7 +2,7 @@
 layout: single
 title: "EXISTS문 활용"
 search: true
-permalink: /SQL/Oracle
+permalink: /SQL/
 excerpt: "How to use EXISTS on Oracle DB."
 last_modified_at: 2021-09-06T13:33:00+09:00
 toc: true
@@ -37,9 +37,9 @@ SELECT a.date
                 WHERE a.acountno = b.acountno  /* 계좌번호가 동일한 것 */
                   AND b.amount BETWEEN a.amount * 0.80
                                    AND b.amount * 1.20  /* 금액이 서로 ±20% 차이 */
-			     AND b.date BETWEEN ADD_MONTHS(a.date, -1) - 5
+                  AND b.date BETWEEN ADD_MONTHS(a.date, -1) - 5
                                  AND ADD_MONTHS(a.date, -1) + 5  /* 일자가 서로 ±5일 차이 */
-			   )
+               )
 ```
 
 위와 같은 쿼리를 실행하면, `SELECT`되는 결과는 `WHERE`의 `EXISTS`문에 따라 두 달에 걸쳐 유사한 금액과 유사한 시기에 발생한 내역만이 남게 된다.
@@ -84,9 +84,9 @@ QUERY를 천천히 읽어보면, `WHERE`문에서 account TABLE의 amount 컬럼
                 WHERE a.acountno = b.acountno  /* 계좌번호가 동일한 것 */
                   AND b.amount BETWEEN a.amount * 0.80
                                    AND b.amount * 1.20  /* 금액이 서로 ±20% 차이 */
-			     AND b.date BETWEEN ADD_MONTHS(a.date, -1) - 5
+                  AND b.date BETWEEN ADD_MONTHS(a.date, -1) - 5
                                  AND ADD_MONTHS(a.date, -1) + 5  /* 일자가 서로 ±5일 차이 */
-			   )
+                )
 ```
 
 위의 EXISTS 문에서는 무자비한(?) 범위 비교가 실행된다. 다소 DB한테 미안하지만, 조금이나마 덜 미안하기 위해 `INDEX`를 잡아주자. 필자는 위의 상황에서 acountno, amount, date 컬럼에 대해 두번째 `INDEX`를 잡아주었다.
@@ -113,9 +113,9 @@ SELECT a.date
                 WHERE a.acountno = b.acountno  /* 계좌번호가 동일한 것 */
                   AND b.amount BETWEEN a.amount * 0.80
                                    AND b.amount * 1.20  /* 금액이 서로 ±20% 차이 */
-			     AND b.date BETWEEN ADD_MONTHS(a.date, -1) - 5
+                  AND b.date BETWEEN ADD_MONTHS(a.date, -1) - 5
                                  AND ADD_MONTHS(a.date, -1) + 5  /* 일자가 서로 ±5일 차이 */
-			   )
+                )
 ```
 
 위의 두 Tuning을 진행하였을 때, 필자는 반나절 혹은 멈추지 않던 QUERY가 10분 내로 결과를 표출하도록 성능 개선을 얻을 수 있었다. 필자가 QUERY한 TABLE의 크기는 레코드가 총 2.5억 건이었으며, 첫 번째 `WHERE` 절에서 전체 모수에서 400만건 정도 SELECT되도록 상황을 설계하여 QUERY를 진행하였다.

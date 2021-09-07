@@ -12,10 +12,6 @@ tags:
   - Back Propagation
   - Autograd
 ---
-# 역전파Back-propagation and Autograd
-
-
-
 *[본 포스팅은 김성훈 교수님의 PyTorch Zero To All Lecture을 보며 작성한 글입니다]*
 
 

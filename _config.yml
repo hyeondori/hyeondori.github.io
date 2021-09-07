@@ -61,7 +61,7 @@ atom_feed:
   hide                   : # true, false (default)
 search                   : true # true, false (default)
 search_full_content      : # true, false (default)
-search_provider          : google # lunr (default), algolia, google
+search_provider          : lunr # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -69,7 +69,7 @@ algolia:
   powered_by             : # true (default), false
 google:
   search_engine_id       : 2232a7ada6b0f5181 # YOUR_SEARCH_ENGINE_ID
-  instant_search         : true # false (default), true
+  instant_search         : false # false (default), true
 # SEO Related
 google_site_verification : "ML; SQL; datascience; DB; hyeondori;"
 bing_site_verification   : "ML; SQL; datascience; DB; hyeondori;"

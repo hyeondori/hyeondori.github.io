@@ -94,7 +94,7 @@ w = torch.tensor([1.0], requires_grad=True) # Any random
 
 ### 함수 선언
 
-각 노드 x에 가중치 w를 반영할 forward(x)함수와 Loss function을 계산하기 위한 loss(x, y)함수를 선언한다.
+각 노드 x에 가중치 w를 반영할 `forward(x)`함수와 Loss function을 계산하기 위한 `loss(y_pred, y_val)`함수를 선언한다.
 
 
 ```python
@@ -119,7 +119,7 @@ print("Prediction (before training)",  4, forward(4).item())
 
 ### 훈련 실행
 
-10번의 epoch동안 gradient loss를 계산하고 이를 통해 가중치를 업데이트한다.
+10번의 `epoch`동안 `gradient loss`를 계산하고 이를 통해 가중치를 업데이트한다.
 
 ```python
 # Training loop
@@ -178,7 +178,7 @@ for epoch in range(10):
     	grad:  3.0 6.0 -1.070866584777832
     Epoch: 9 | Loss: 0.03185431286692619
 
-훈련 후에 forward(x)함수에 4를 넣어보면 8에 가까운 숫자가 나오는 것을 확인할 수 있다.
+훈련 후에 `forward(x)`함수에 4를 넣어보면 8에 가까운 숫자가 나오는 것을 확인할 수 있다.
 
 ```python
 # After training
@@ -189,8 +189,8 @@ print("Prediction (after training)",  4, forward(4).item())
 
 오늘 포스팅을 요약하면 PyTorch를 활용하면 계산하기 힘든 역전파와 Chain Rule을 손쉽게 구현할 수 있다는 것이다.
 
-* 역전파는 l.backward()로 간단하게 구현할 수 있다.
-* 가중치 업데이트는 w.data = w.data - 0.01 * w.grad.data로 구현할 수 있었다.
+* 역전파는 `l.backward()`로 간단하게 구현할 수 있다.
+* 가중치 업데이트는 `w.data = w.data - 0.01 * w.grad.data`로 구현할 수 있었다.
 
 다음 포스팅은 PyTorch를 통해 하나의 신경망 모델을 처음부터 끝까지 구현해보는 것으로 구성해 보겠다.
 

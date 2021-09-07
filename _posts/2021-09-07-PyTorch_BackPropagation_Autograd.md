@@ -48,7 +48,7 @@ Chain Rule은 한국어로 연쇄 법칙이라 일컬으며, 함수의 합성에
 
 
 
-당장 미분만 보면 골머리가 아파올 당신을 위해 빠르게 설명하자면(필자도 오랜만에 미분을 봐서 어질어질하다. 얼른 다시 익숙해지길), 함수 {\displaystyle g}![g](https://wikimedia.org/api/rest_v1/media/math/render/svg/d3556280e66fe2c0d0140df20935a6f057381d77)가 {\displaystyle x_{0}}![x_0](https://wikimedia.org/api/rest_v1/media/math/render/svg/86f21d0e31751534cd6584264ecf864a6aa792cf)에서 미분 가능하며 함수 {\displaystyle f}![f](https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61)가 {\displaystyle g(x_{0})}![{\displaystyle g(x_{0})}](https://wikimedia.org/api/rest_v1/media/math/render/svg/2a4919ce8109c528145f19e09f5a07f5e9671956)에서 미분 가능할 때 {\displaystyle f\circ g}![f\circ g](https://wikimedia.org/api/rest_v1/media/math/render/svg/b2f61ca7838709fbae07dce9c0d513770f10cfae)는 {\displaystyle x_{0}}![x_0](https://wikimedia.org/api/rest_v1/media/math/render/svg/86f21d0e31751534cd6584264ecf864a6aa792cf)에서 미분 가능하다는 의미이다.
+당장 미분만 보면 골머리가 아파올 당신을 위해 빠르게 설명하자면(필자도 오랜만에 미분을 봐서 어질어질하다. 얼른 다시 익숙해지길), 함수 ![\displaystyle g](https://wikimedia.org/api/rest_v1/media/math/render/svg/d3556280e66fe2c0d0140df20935a6f057381d77)가 ![\displaystyle x_0](https://wikimedia.org/api/rest_v1/media/math/render/svg/86f21d0e31751534cd6584264ecf864a6aa792cf)에서 미분 가능하며 함수 ![f](https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61)가 ![{\displaystyle g(x_{0})}](https://wikimedia.org/api/rest_v1/media/math/render/svg/2a4919ce8109c528145f19e09f5a07f5e9671956)에서 미분 가능할 때 ![\displaystyle f\circ g](https://wikimedia.org/api/rest_v1/media/math/render/svg/b2f61ca7838709fbae07dce9c0d513770f10cfae)는 ![\displaystyle x_0](https://wikimedia.org/api/rest_v1/media/math/render/svg/86f21d0e31751534cd6584264ecf864a6aa792cf)에서 미분 가능하다는 의미이다.
 
 
 

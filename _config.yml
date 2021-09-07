@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Hans Shin 申弦洙"
-  avatar           : "/assets/images/teaser_image.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatar_image.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "선한 의지로 더 밝은 내일을 만듭니다\nCreate a brighter tomorrow with good will"
   location         : "Seoul, Republic of Korea"
 

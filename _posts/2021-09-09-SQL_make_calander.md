@@ -64,7 +64,7 @@ CONNECT BY FIRST_DAY + LEVEL - 1 <= LAST_DAY(SYSDATE)       /* 출력하고 싶�
 
 예시에서는 해당 월의 처음부터 말일까지를 출력했지만, 현재 상황이 현재 날짜로 부터 세달 후를 필요로 한다면 다음과 같이 수정하면 된다.
 
-```SQL
+```sql
 SELECT TO_CHAR(SYSDATE + LEVEL - 1, 'YYYY-MM-DD') DAY     /* 해당일자 */
      , TO_CHAR(SYSDATE + LEVEL - 1, 'YYYYMMDD') DAY_STR   /* 해당일자_STRING */
      , TO_CHAR(SYSDATE + LEVEL - 1,'IW') WEEK_NUM         /* 주차수 */

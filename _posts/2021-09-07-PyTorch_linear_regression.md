@@ -3,7 +3,7 @@ layout: single
 title: "선형회귀 모델을 PyTorch로 가볍게 구현해보자"
 search: true
 excerpt: "PyTorch를 통한 모델링 기본 이해"
-last_modified_at: 2021-09-07T16:57:00+09:00
+last_modified_at: 2021-09-08T16:57:00+09:00
 toc: true
 categories:
   - ML,DL

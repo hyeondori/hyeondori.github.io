@@ -8,7 +8,6 @@ categories:
   - SQL
 tags:
   - query
-  - calender
   - function
 ---
 QUERY문을 작성하다보면, 가끔 달력을 만들어 활용할 때가 있다.

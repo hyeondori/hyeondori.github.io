@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Oracle EXISTS문 활용"
+title: "Oracle EXISTS문은 어디에 쓰는 친구일까?"
 search: true
 excerpt: "How to use EXISTS on Oracle DB."
 last_modified_at: 2021-09-07T11:29:00+09:00

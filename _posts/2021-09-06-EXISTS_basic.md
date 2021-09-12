@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Oracle EXISTS문 기본"
+title: "Oracle에서 IN보다 성능 좋은 친구를 찾아보자"
 search: true
 excerpt: "How to use EXISTS on Oracle DB."
 last_modified_at: 2021-09-06T13:33:00+09:00

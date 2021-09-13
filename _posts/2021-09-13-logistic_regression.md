@@ -39,7 +39,7 @@ $$
 $$
 ~~자연로그 e를 보고 어지럽다면 당신은 문과 출신이다. 하지만 괜찮다. 필자도 똑같다.~~
 
-<img src="\assets\images\typora-user-images/sigmoid.png" alt="sig" style="zoom:67%;" />
+<img src="\assets\images\typora-user-images\sigmoid.png" alt="sig" style="zoom:67%;" />
 
 `Sigmoid` 함수 양 끝을 보면 0과 1로 수렴하는 것을 볼 수 있다. 왜 갑자기 이 함수가 등장했는지 그림으로 봤으니 와닿을 것이라 생각한다.
 전통적으로 연구자들은 컴퓨터가 계산한 무언가를 0과 1의 결과값을 얻기 위해 이와 같은 함수를 활용해왔다.

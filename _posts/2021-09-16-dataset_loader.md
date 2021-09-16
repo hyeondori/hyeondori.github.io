@@ -120,6 +120,8 @@ class Model(nn.Module):
         return y_pred
 ```
 
+이전과 동일하게 모델을 정의하였다.
+
 
 ```python
 # our model
@@ -158,3 +160,8 @@ for epoch in range(2):
     Epoch 2 | Batch: 23 | Loss: 22.1596
     Epoch 2 | Batch: 24 | Loss: 15.9283
 
+앞서 정의한 train_loader로 학습을 진행하고 test_loader로 성능을 평가하는 과정을 반복하며, Loss가 점점 떨어지는 것을 볼 수 있다.
+
+앞선 포스팅에 비해 훨씬 큰 데이터셋을 다룸에도 불구하고 DataLoader를 통해 효율적으로 모델에 학습이 되었다.
+
+어서 빨리 딥러닝 모델을 자유자재로 다룰 수 있는 사람이 되기를 소망한다 :)

@@ -2,7 +2,7 @@
 layout: single
 title: "PyTorch의 핵심, DataLoader"
 search: true
-excerpt: "데이터를 더욱 효율적으로 학습시키기 위한 방법"
+excerpt: "데이터를 더욱 효율적으로 다루기 위한 방법"
 last_modified_at: 2021-09-16T13:36:00+09:00
 toc: true
 categories:

@@ -59,7 +59,7 @@ print(f'Training MNIST Model on {device}\n{"=" * 44}')
     Training MNIST Model on cuda
     ============================================
 
-
+## Set Datasets
 
 ```python
 # MNIST Dataset
@@ -124,12 +124,11 @@ test_loader = data.DataLoader(dataset=test_dataset,
 ​    To change this limit, set the config variable
 ​    `--ServerApp.iopub_msg_rate_limit`.
 ​    
-    Current values:
-    ServerApp.iopub_msg_rate_limit=1000.0 (msgs/sec)
-    ServerApp.rate_limit_window=3.0 (secs)
+​    Current values:
+​    ServerApp.iopub_msg_rate_limit=1000.0 (msgs/sec)
+​    ServerApp.rate_limit_window=3.0 (secs)
 
-
-​    
+    ## Modeling
 
 
 ```python
@@ -159,6 +158,8 @@ model.to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.5)
 ```
+
+## Training
 
 
 ```python

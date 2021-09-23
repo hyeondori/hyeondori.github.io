@@ -10,6 +10,7 @@ categories:
 tags:
   - PyTorch
   - Softmax
+use_math: true
 
 ---
 

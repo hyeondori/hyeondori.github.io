@@ -35,9 +35,11 @@ use_math: true
 오늘 설명할 함수는 `Sigmoid` 함수이다.
 
 한국어로는 시그모이드 함수라고 쓰며, `Logistic` 함수라고도 한다. 해당 함수는 다음과 같이 구성된다.
+
 $$
 σ(x)=\frac{1}{1+e^{-x}}
 $$
+
 ~~자연로그 e를 보고 어지럽다면 당신은 문과 출신이다. 하지만 괜찮다. 필자도 똑같다.~~
 
 <img src="\assets\images\typora-user-images\sigmoid.png" alt="sig" style="zoom:67%;" />

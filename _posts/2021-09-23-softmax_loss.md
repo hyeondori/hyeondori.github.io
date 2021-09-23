@@ -24,7 +24,7 @@ Softmax 함수는 다음과 같이 구성된다.
 ### Softmax 함수
 
 $$
-p_j=\frac{e^{z_j}}{\displaystyle\sum^K_{k=1}e^{z_j}}\\j = 1, 2, ..., K
+p_j= \frac {e^{z_j}} { \displaystyle \sum ^K_{k=1}e^{z_j}} \\ j = 1, 2, ..., K
 $$
 
 Softmax 함수의 작동 원리를 설명하는 것은 다소 길어질 수 있어 따로 정리하도록 하겠다.
